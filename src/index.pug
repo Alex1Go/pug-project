@@ -1,0 +1,103 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Dashboard
+        link(rel="stylesheet", href="styles/style.css")
+    body
+        .container 
+            aside.sidebar       
+                a.sidebar-link(href="#")   
+                    svg.sidebar-link__logo
+                        use(href='images/sprite.svg#logo') 
+                    span.sidebar-link__title DASHBOARD
+                        span.sidebar-link__doptitle v.01 
+                nav 
+                    ul.list 
+                        li.item
+                            a.item-link(href="")
+                                svg.item-link__logo
+                                    use(href='./images/sprite.svg#icon-key-square')
+                                | Dashboard
+                        li.item
+                            a.item-link(href="")
+                                svg.item-link__logo
+                                    use(href='./images/sprite.svg#icon-d-square-1')
+                                | Product 
+                                svg.item-link__logo2
+                                    use(href='./images/sprite.svg#icon-chevron-right-2') 
+                        li.item
+                            a.item-link(href="")
+                                svg.item-link__logo
+                                    use(href='images/sprite.svg#icon-user-square-1')
+                                | Customers 
+                                svg.item-link__logo2
+                                    use(href='images/sprite.svg#icon-chevron-right-2')  
+                        li.item
+                            a.item-link(href="") 
+                                svg.item-link__logo
+                                    use(href='images/sprite.svg#icon-wallet-money-2')
+                                | Income
+                                svg.item-link__logo2
+                                    use(href='images/sprite.svg#icon-chevron-right-2') 
+                        li.item
+                            a.item-link(href="")
+                                svg.item-link__logo
+                                    use(href='images/sprite.svg#icon-discount-shape-1')
+                                | Promote
+                                svg.item-link__logo2
+                                    use(href='images/sprite.svg#icon-chevron-right-2') 
+                        li.item
+                            a.item-link(href="")
+                                svg.item-link__logo
+                                    use(href='images/sprite.svg#icon-message-question-1')
+                                | Help
+                                svg.item-link__logo2
+                                    use(href='images/sprite.svg#icon-chevron-right-2')
+            .main-content
+                header
+                    h1 Hello Evano 👋
+                section.customer-table
+                    .customer-table__box
+
+                        h2 All Customers
+                        p Active Members
+                    .search-bar
+                         input(type="text" placeholder="Search")
+
+                    table
+                        thead
+                            tr
+                                th Customer Name
+                                th Company
+                                th Phone Number
+                                th Email
+                                th Country
+                                th Status
+                        tbody
+                            tr
+                                td Jhon Wick
+                                td Microsoft
+                                td +123 456 789
+                                td jhon@wick.com
+                                td USA
+                                td.status Active
+                            tr
+                                td Jane Doe
+                                td Google
+                                td +987 654 321
+                                td jane@doe.com
+                                td Canada
+                                td.status Inactive
+              
+                    .pagination
+                        span Showing data 1 to 8 of 256K entries
+                        .pagination-controls
+                            a(href="#") Prev
+                            a(href="#") 1
+                            a(href="#") 2
+                            a(href="#") 3
+                            a(href="#") ...
+                            a(href="#") 32
+                            a(href="#") Next    

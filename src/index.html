@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div class="container"> 
+      <aside class="sidebar">      <a class="sidebar-link" href="#">  
+          <svg class="sidebar-link__logo">
+            <use href="images/sprite.svg#logo"> </use>
+          </svg><span class="sidebar-link__title">DASHBOARD<span class="sidebar-link__doptitle">v.01 </span></span></a>
+        <nav> 
+          <ul class="list"> 
+            <li class="item"><a class="item-link" href="">
+                <svg class="item-link__logo">
+                  <use href="./images/sprite.svg#icon-key-square"></use>
+                </svg>Dashboard</a></li>
+            <li class="item"><a class="item-link" href="">
+                <svg class="item-link__logo">
+                  <use href="./images/sprite.svg#icon-d-square-1"></use>
+                </svg>Product 
+                <svg class="item-link__logo2">
+                  <use href="./images/sprite.svg#icon-chevron-right-2"> </use>
+                </svg></a></li>
+            <li class="item"><a class="item-link" href="">
+                <svg class="item-link__logo">
+                  <use href="images/sprite.svg#icon-user-square-1"></use>
+                </svg>Customers 
+                <svg class="item-link__logo2">
+                  <use href="images/sprite.svg#icon-chevron-right-2"> </use>
+                </svg></a></li>
+            <li class="item"><a class="item-link" href=""> 
+                <svg class="item-link__logo">
+                  <use href="images/sprite.svg#icon-wallet-money-2"></use>
+                </svg>Income
+                <svg class="item-link__logo2">
+                  <use href="images/sprite.svg#icon-chevron-right-2"> </use>
+                </svg></a></li>
+            <li class="item"><a class="item-link" href="">
+                <svg class="item-link__logo">
+                  <use href="images/sprite.svg#icon-discount-shape-1"></use>
+                </svg>Promote
+                <svg class="item-link__logo2">
+                  <use href="images/sprite.svg#icon-chevron-right-2"> </use>
+                </svg></a></li>
+            <li class="item"><a class="item-link" href="">
+                <svg class="item-link__logo">
+                  <use href="images/sprite.svg#icon-message-question-1"></use>
+                </svg>Help
+                <svg class="item-link__logo2">
+                  <use href="images/sprite.svg#icon-chevron-right-2"></use>
+                </svg></a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-content">
+        <header>
+          <h1>Hello Evano 👋</h1>
+        </header>
+        <section class="customer-table">
+          <div class="customer-table__box">
+            <h2>All Customers</h2>
+            <p>Active Members</p>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search">
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jhon Wick</td>
+                <td>Microsoft</td>
+                <td>+123 456 789</td>
+                <td>jhon@wick.com</td>
+                <td>USA</td>
+                <td class="status">Active</td>
+              </tr>
+              <tr>
+                <td>Jane Doe</td>
+                <td>Google</td>
+                <td>+987 654 321</td>
+                <td>jane@doe.com</td>
+                <td>Canada</td>
+                <td class="status">Inactive</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination"><span>Showing data 1 to 8 of 256K entries</span>
+            <div class="pagination-controls"><a href="#">Prev</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">...</a><a href="#">32</a><a href="#">Next    </a></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
