@@ -58,14 +58,17 @@ html(lang="en")
                                     use(href='images/sprite.svg#icon-chevron-right-2')
             .main-content
                 header
-                    h1 Hello Evano 👋
+                    h1 Hello Evano 
+                    img(src="./images/Hello.png", alt="hello")
+                
                 section.customer-table
-                    .customer-table__box
+                    .customer-table__block
+                        .customer-table__box
+                            h2 All Customers
+                            p Active Members
+                        .customer-table__search-bar
 
-                        h2 All Customers
-                        p Active Members
-                    .search-bar
-                        input(type="text" placeholder="Search")
+                            input(type="text" placeholder="Search")
 
                     table
                         thead

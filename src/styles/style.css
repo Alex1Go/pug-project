@@ -28,6 +28,7 @@ a {
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   margin: 0;
   background-color: #f5f6fa;
 }
@@ -111,19 +112,20 @@ body {
 
 .main-content {
   flex-grow: 1;
-  padding: 20px;
+  padding: 41px 95px 0 71px;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 51px;
 }
 
 h1 {
+  font-weight: 500;
   font-size: 24px;
-  font-weight: 700;
+  color: #000;
+  margin-right: 5px;
 }
 
 .customer-table {
@@ -132,19 +134,35 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.customer-table h2 {
-  margin-bottom: 20px;
+.customer-table__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.customer-table__box h2 {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  color: #000;
+  margin-bottom: 7px;
+}
+.customer-table__box p {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #16c098;
+}
+.customer-table__search-bar {
+  border-radius: 10px;
+  width: 216px;
+  height: 38px;
+  background: #f9fbff;
 }
 
-.search-bar {
-  margin-bottom: 20px;
-}
-
-.search-bar input {
+.customer-table input {
   width: 100%;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 30px;
+  border-radius: 25px;
   border: 1px solid #ddd;
 }
 
