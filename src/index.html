@@ -4,7 +4,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <style>
+       @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f6fa;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 28px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.sidebar-link__logo {
+  fill: black;
+  width: 37px;
+  height: 37px;
+}
+.sidebar-link__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+.sidebar-link__doptitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.01em;
+  color: #838383;
+  margin-left: 4px;
+}
+.sidebar nav {
+  margin-top: 60px;
+}
+.sidebar nav .list .item {
+  border-radius: 8px;
+  width: 250px;
+  height: 46px;
+  align-items: center;
+  display: flex;
+}
+.sidebar nav .list .item:hover {
+  background-color: #5932ea;
+}
+.sidebar nav .list .item-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #9197b3;
+  display: flex;
+  align-items: center;
+  padding: 11px 8px 11px 11px;
+  width: 100%;
+}
+.sidebar nav .list .item-link__logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+  fill: #d9534f;
+}
+.sidebar nav .list .item-link__logo2 {
+  width: 16px;
+  height: 16px;
+  stroke: #9197b3;
+  margin-left: auto;
+}
+.sidebar nav .list .item-link__logo2:hover {
+  stroke: #ffffff;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.customer-table {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-table h2 {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f7f7f7;
+}
+
+td.status {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+td.status.Active {
+  background-color: #5cb85c;
+}
+
+td.status.Inactive {
+  background-color: #d9534f;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pagination-controls a {
+  margin: 0 5px;
+  color: #407bff;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+  .main-content {
+    padding: 10px;
+  }
+  table,
+  th,
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  th,
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: transparent;
+  }
+  td.status {
+    margin-top: 5px;
+  }
+  .pagination {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
+    </style>
   </head>
   <body>
     <div class="container"> 
