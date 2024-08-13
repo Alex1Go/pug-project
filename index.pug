@@ -5,14 +5,14 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Dashboard
         style 
-            include styles/normalize.css
-            include styles/style.css
+            include src/styles/normalize.css
+            include src/styles/style.css
     body
         .container 
             aside.sidebar       
                 a.sidebar-link(href="#")   
                     svg.sidebar-link__logo
-                        use(href='images/sprite.svg#logo') 
+                        use(href='src/images/sprite.svg#logo') 
                     span.sidebar-link__title DASHBOARD
                         span.sidebar-link__doptitle v.01 
                 nav 
@@ -20,47 +20,47 @@ html(lang="en")
                         li.item
                             a.item-link(href="")
                                 svg.item-link__logo
-                                    use(href='./images/sprite.svg#icon-key-square')
+                                    use(href='src/images/sprite.svg#icon-key-square')
                                 | Dashboard
                         li.item
                             a.item-link(href="")
                                 svg.item-link__logo
-                                    use(href='./images/sprite.svg#icon-d-square-1')
+                                    use(href='src/images/sprite.svg#icon-d-square-1')
                                 | Product 
                                 svg.item-link__logo2
-                                    use(href='./images/sprite.svg#icon-chevron-right-2') 
+                                    use(href='src/images/sprite.svg#icon-chevron-right-2') 
                         li.item
                             a.item-link(href="")
                                 svg.item-link__logo
-                                    use(href='images/sprite.svg#icon-user-square-1')
+                                    use(href='src/images/sprite.svg#icon-user-square-1')
                                 | Customers 
                                 svg.item-link__logo2
-                                    use(href='images/sprite.svg#icon-chevron-right-2')  
+                                    use(href='src/images/sprite.svg#icon-chevron-right-2')  
                         li.item
                             a.item-link(href="") 
                                 svg.item-link__logo
-                                    use(href='images/sprite.svg#icon-wallet-money-2')
+                                    use(href='src/images/sprite.svg#icon-wallet-money-2')
                                 | Income
                                 svg.item-link__logo2
-                                    use(href='images/sprite.svg#icon-chevron-right-2') 
+                                    use(href='src/images/sprite.svg#icon-chevron-right-2') 
                         li.item
                             a.item-link(href="")
                                 svg.item-link__logo
-                                    use(href='images/sprite.svg#icon-discount-shape-1')
+                                    use(href='src/images/sprite.svg#icon-discount-shape-1')
                                 | Promote
                                 svg.item-link__logo2
-                                    use(href='images/sprite.svg#icon-chevron-right-2') 
+                                    use(href='src/images/sprite.svg#icon-chevron-right-2') 
                         li.item
                             a.item-link(href="")
                                 svg.item-link__logo
-                                    use(href='images/sprite.svg#icon-message-question-1')
+                                    use(href='src/images/sprite.svg#icon-message-question-1')
                                 | Help
                                 svg.item-link__logo2
-                                    use(href='images/sprite.svg#icon-chevron-right-2')
+                                    use(href='src/images/sprite.svg#icon-chevron-right-2')
             .main-content
                 header
                     h1 Hello Evano 
-                    img(src="./images/Hello.png", alt="hello")
+                    img(src="src/images/Hello.png", alt="hello")
                 
                 section.customer-table
                     .customer-table__block
@@ -69,7 +69,7 @@ html(lang="en")
                             p Active Members
                         .customer-table__search-bar
                             svg.customer-table__icon
-                                use(href='images/sprite.svg#icon-search-1') 
+                                use(href='src/images/sprite.svg#icon-search-1') 
                             input(type="text" placeholder="Search")
 
                     table
