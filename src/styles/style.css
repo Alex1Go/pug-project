@@ -130,7 +130,7 @@ h1 {
 
 .customer-table {
   background-color: #fff;
-  padding: 20px;
+  padding: 30px 44px 40px 38px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -138,6 +138,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 .customer-table__box h2 {
   font-weight: 600;
@@ -153,17 +154,28 @@ h1 {
   color: #16c098;
 }
 .customer-table__search-bar {
+  display: flex;
   border-radius: 10px;
   width: 216px;
   height: 38px;
   background: #f9fbff;
+  align-items: center;
 }
-
+.customer-table__icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+}
 .customer-table input {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
   width: 100%;
-  padding: 30px;
-  border-radius: 25px;
-  border: 1px solid #ddd;
+  border: none;
+  background: #f9fbff;
+}
+.customer-table input:focus-visible {
+  outline: none;
 }
 
 table {
@@ -173,20 +185,27 @@ table {
 
 th,
 td {
-  padding: 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
 th {
-  background-color: #f7f7f7;
+  font-weight: 500;
+  font-size: 14px;
+  color: #b5b7c0;
+  padding-bottom: 14px;
+}
+
+td {
+  font-weight: 500;
+  font-size: 14px;
+  color: #292d32;
 }
 
 td.status {
-  color: #fff;
-  padding: 5px 10px;
   border-radius: 5px;
   text-align: center;
+  background-color: #5cb85c;
 }
 
 td.status.Active {
@@ -202,22 +221,17 @@ td.status.Inactive {
   justify-content: space-between;
   margin-top: 20px;
 }
+.pagination span {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #b5b7c0;
+}
 
 .pagination-controls a {
   margin: 0 5px;
   color: #407bff;
   text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-  margin: 0;
 }
 
 /* Адаптивные стили */

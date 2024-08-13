@@ -5,6 +5,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Dashboard
         style 
+            include styles/normalize.css
             include styles/style.css
     body
         .container 
@@ -67,7 +68,8 @@ html(lang="en")
                             h2 All Customers
                             p Active Members
                         .customer-table__search-bar
-
+                            svg.customer-table__icon
+                                use(href='images/sprite.svg#icon-search-1') 
                             input(type="text" placeholder="Search")
 
                     table
