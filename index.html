@@ -5,188 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <style>
-       /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%
-}
-
-body {
-    margin: 0
-}
-
-main {
-    display: block
-}
-
-h1 {
-    font-size: 2em;
-    margin: .67em 0
-}
-
-hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible
-}
-
-pre {
-    font-family: monospace, monospace;
-    font-size: 1em
-}
-
-a {
-    background-color: transparent
-}
-
-abbr[title] {
-    border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted
-}
-
-b,
-strong {
-    font-weight: bolder
-}
-
-code,
-kbd,
-samp {
-    font-family: monospace, monospace;
-    font-size: 1em
-}
-
-small {
-    font-size: 80%
-}
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline
-}
-
-sub {
-    bottom: -.25em
-}
-
-sup {
-    top: -.5em
-}
-
-img {
-    border-style: none
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0
-}
-
-button,
-input {
-    overflow: visible
-}
-
-button,
-select {
-    text-transform: none
-}
-
-[type=button],
-[type=reset],
-[type=submit],
-button {
-    -webkit-appearance: button
-}
-
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner,
-button::-moz-focus-inner {
-    border-style: none;
-    padding: 0
-}
-
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
-button:-moz-focusring {
-    outline: 1px dotted ButtonText
-}
-
-fieldset {
-    padding: .35em .75em .625em
-}
-
-legend {
-    box-sizing: border-box;
-    color: inherit;
-    display: table;
-    max-width: 100%;
-    padding: 0;
-    white-space: normal
-}
-
-progress {
-    vertical-align: baseline
-}
-
-textarea {
-    overflow: auto
-}
-
-[type=checkbox],
-[type=radio] {
-    box-sizing: border-box;
-    padding: 0
-}
-
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-    height: auto
-}
-
-[type=search] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px
-}
-
-[type=search]::-webkit-search-decoration {
-    -webkit-appearance: none
-}
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit
-}
-
-details {
-    display: block
-}
-
-summary {
-    display: list-item
-}
-
-template {
-    display: none
-}
-
-[hidden] {
-    display: none
-}
-
-/*# sourceMappingURL=normalize.min.css.map */@charset "UTF-8";
+       @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 h1,
 h2,
@@ -230,7 +49,7 @@ body {
 .sidebar {
   width: 250px;
   background-color: #fff;
-  padding: 28px;
+  padding: 36px 28px 76px 28px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .sidebar-link {
@@ -247,14 +66,12 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 26px;
-  letter-spacing: 0.01em;
   color: #000;
 }
 .sidebar-link__doptitle {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 10px;
-  letter-spacing: -0.01em;
   color: #838383;
   margin-left: 4px;
 }
@@ -294,13 +111,9 @@ body {
   stroke: #9197b3;
   margin-left: auto;
 }
-.sidebar nav .list .item-link:hover {
-  background-color: #ffffff;
-}
 .sidebar .dev {
   display: flex;
-  margin-top: 100px;
-  margin-bottom: 76px;
+  margin-top: 350px;
   align-items: center;
 }
 .sidebar .dev__foto {
@@ -311,19 +124,17 @@ body {
 .sidebar .dev-name__title {
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: 0.01em;
   color: #000;
 }
 .sidebar .dev-name__prof {
   font-weight: 400;
   font-size: 12px;
-  letter-spacing: 0.01em;
   color: #757575;
 }
 
 .main-content {
   flex-grow: 1;
-  padding: 41px 95px 0 71px;
+  padding: 41px 95px 40px 71px;
 }
 
 header {
@@ -354,14 +165,12 @@ h1 {
 .customer-table__box h2 {
   font-weight: 600;
   font-size: 22px;
-  letter-spacing: -0.01em;
   color: #000;
   margin-bottom: 7px;
 }
 .customer-table__box p {
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: -0.01em;
   color: #16c098;
 }
 .customer-table__search-bar {
@@ -425,7 +234,6 @@ td span {
   background: rgba(22, 192, 152, 0.38);
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: -0.01em;
   color: #008767;
   text-align: center;
 }
@@ -436,19 +244,18 @@ td span {
   border: 1px solid #df0404;
 }
 
-.pagination {
+.paginations {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 30px;
 }
-.pagination span {
+.paginations span {
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: -0.01em;
   color: #b5b7c0;
 }
 
-.pagination-controls a {
+.paginations-controls a {
   margin: 0 5px;
   color: #407bff;
   text-decoration: none;
@@ -641,8 +448,8 @@ td span {
               </tr>
             </tbody>
           </table>
-          <div class="pagination"><span>Showing data 1 to 8 of 256K entries</span>
-            <div class="pagination-controls"><a href="#">Prev</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">...</a><a href="#">32</a><a href="#">Next    </a></div>
+          <div class="paginations"><span>Showing data 1 to 8 of 256K entries</span>
+            <div class="paginations-controls"><a href="#">Prev</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">...</a><a href="#">32</a><a href="#">Next  </a></div>
           </div>
         </section>
       </div>

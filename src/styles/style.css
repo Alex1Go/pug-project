@@ -42,7 +42,7 @@ body {
 .sidebar {
   width: 250px;
   background-color: #fff;
-  padding: 28px;
+  padding: 36px 28px 76px 28px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .sidebar-link {
@@ -59,14 +59,12 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 26px;
-  letter-spacing: 0.01em;
   color: #000;
 }
 .sidebar-link__doptitle {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 10px;
-  letter-spacing: -0.01em;
   color: #838383;
   margin-left: 4px;
 }
@@ -106,13 +104,9 @@ body {
   stroke: #9197b3;
   margin-left: auto;
 }
-.sidebar nav .list .item-link:hover {
-  background-color: #ffffff;
-}
 .sidebar .dev {
   display: flex;
-  margin-top: 100px;
-  margin-bottom: 76px;
+  margin-top: 350px;
   align-items: center;
 }
 .sidebar .dev__foto {
@@ -123,19 +117,17 @@ body {
 .sidebar .dev-name__title {
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: 0.01em;
   color: #000;
 }
 .sidebar .dev-name__prof {
   font-weight: 400;
   font-size: 12px;
-  letter-spacing: 0.01em;
   color: #757575;
 }
 
 .main-content {
   flex-grow: 1;
-  padding: 41px 95px 0 71px;
+  padding: 41px 95px 40px 71px;
 }
 
 header {
@@ -166,14 +158,12 @@ h1 {
 .customer-table__box h2 {
   font-weight: 600;
   font-size: 22px;
-  letter-spacing: -0.01em;
   color: #000;
   margin-bottom: 7px;
 }
 .customer-table__box p {
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: -0.01em;
   color: #16c098;
 }
 .customer-table__search-bar {
@@ -237,7 +227,6 @@ td span {
   background: rgba(22, 192, 152, 0.38);
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: -0.01em;
   color: #008767;
   text-align: center;
 }
@@ -248,19 +237,18 @@ td span {
   border: 1px solid #df0404;
 }
 
-.pagination {
+.paginations {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 30px;
 }
-.pagination span {
+.paginations span {
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: -0.01em;
   color: #b5b7c0;
 }
 
-.pagination-controls a {
+.paginations-controls a {
   margin: 0 5px;
   color: #407bff;
   text-decoration: none;

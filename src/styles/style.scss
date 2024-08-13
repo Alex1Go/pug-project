@@ -38,7 +38,7 @@ body {
 .sidebar {
   width: 250px;
   background-color: #fff;
-  padding: 28px;
+  padding: 36px 28px 76px 28px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   &-link {
@@ -77,7 +77,6 @@ body {
         align-items: center;
         display: flex;
         margin-bottom: 18px;
-
         &:hover {
           background-color: #5932ea;
         }
@@ -105,17 +104,13 @@ body {
             stroke: #9197b3;
             margin-left: auto;
           }
-          &:hover {
-            background-color: #ffffff;
-          }
         }
       }
     }
   }
   .dev {
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 76px;
+    margin-top: 350px;
     align-items: center;
 
     &__foto {
@@ -139,7 +134,7 @@ body {
 
 .main-content {
   flex-grow: 1;
-  padding: 41px 95px 0 71px;
+  padding: 41px 95px 40px 71px;
 }
 
 header {
@@ -248,10 +243,10 @@ td span {
   background: #ffc5c5;
   border: 1px solid #df0404;
 }
-.pagination {
+.paginations {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 30px;
 
   span {
     font-weight: 500;
@@ -260,11 +255,55 @@ td span {
   }
 }
 
-.pagination-controls a {
+.paginations-controls a {
   margin: 0 5px;
   color: #407bff;
   text-decoration: none;
 }
+// -------------
+// .pagination {
+//   &__item {
+//     display: inline-block;
+//     font-size: 16px;
+//     border: 1px solid transparent;
+//     margin-right: 2px;
+
+//     &.is-active {
+//       border: 1px solid $c-pagination-active;
+//       background: $c-pagination-active;
+//       color: $c-pagination-item-active;
+//     }
+//     &:hover,
+//     &:active {
+//       border: 1px solid $c-pagination-active;
+//     }
+//   }
+
+//   &__number {
+//     display: block;
+//     padding: 2px 6px;
+//     text-decoration: none;
+//     color: inherit;
+//   }
+
+//   &__list {
+//     display: inline-block;
+//     list-style-type: none;
+//     padding: 0;
+//     font-size: 0;
+//   }
+
+//   &__prev,
+//   &__next {
+//     display: inline-block;
+//     text-decoration: none;
+
+//     &:hover,
+//     &:active {
+//       color: $c-pagination-active;
+//     }
+//   }
+// }
 
 /* Адаптивные стили */
 @media (max-width: 768px) {
