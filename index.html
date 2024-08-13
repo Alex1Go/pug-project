@@ -225,7 +225,6 @@ body {
   display: flex;
   width: 100%;
   max-width: 1400px;
-  height: 100vh;
 }
 
 .sidebar {
@@ -268,6 +267,7 @@ body {
   height: 46px;
   align-items: center;
   display: flex;
+  margin-bottom: 18px;
 }
 .sidebar nav .list .item:hover {
   background-color: #5932ea;
@@ -294,8 +294,31 @@ body {
   stroke: #9197b3;
   margin-left: auto;
 }
-.sidebar nav .list .item-link__logo2:hover {
-  stroke: #ffffff;
+.sidebar nav .list .item-link:hover {
+  background-color: #ffffff;
+}
+.sidebar .dev {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 76px;
+  align-items: center;
+}
+.sidebar .dev__foto {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 12px;
+}
+.sidebar .dev-name__title {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+.sidebar .dev-name__prof {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .main-content {
@@ -384,24 +407,33 @@ th {
   padding-bottom: 14px;
 }
 
+th.status {
+  width: 80px;
+}
+
 td {
   font-weight: 500;
   font-size: 14px;
   color: #292d32;
+  padding: 20px 0;
 }
 
-td.status {
-  border-radius: 5px;
+td span {
+  border: 1px solid #00b087;
+  border-radius: 4px;
+  padding: 4px 12px;
+  background: rgba(22, 192, 152, 0.38);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #008767;
   text-align: center;
-  background-color: #5cb85c;
 }
 
-td.status.Active {
-  background-color: #5cb85c;
-}
-
-td.status.Inactive {
-  background-color: #d9534f;
+.span {
+  color: #df0404;
+  background: #ffc5c5;
+  border: 1px solid #df0404;
 }
 
 .pagination {
@@ -507,6 +539,12 @@ td.status.Inactive {
                 </svg></a></li>
           </ul>
         </nav>
+        <div class="dev"> <img class="dev__foto" src="src/images/evano.jpg" alt="men">
+          <div class="dev-name"> 
+            <h2 class="dev-name__title">Evano</h2>
+            <p class="dev-name__prof">Project Manager</p>
+          </div>
+        </div>
       </aside>
       <div class="main-content">
         <header>
@@ -533,7 +571,7 @@ td.status.Inactive {
                 <th>Phone Number</th>
                 <th>Email</th>
                 <th>Country</th>
-                <th>Status</th>
+                <th class="status">Status</th>
               </tr>
             </thead>
             <tbody>
@@ -543,7 +581,7 @@ td.status.Inactive {
                 <td>+123 456 789</td>
                 <td>jhon@wick.com</td>
                 <td>USA</td>
-                <td class="status">Active</td>
+                <td><span>Acive </span></td>
               </tr>
               <tr>
                 <td>Jane Doe</td>
@@ -551,7 +589,55 @@ td.status.Inactive {
                 <td>+987 654 321</td>
                 <td>jane@doe.com</td>
                 <td>Canada</td>
-                <td class="status">Inactive</td>
+                <td> <span class="span">Inactive</span></td>
+              </tr>
+              <tr>
+                <td>Jhon Wick</td>
+                <td>Microsoft</td>
+                <td>+123 456 789</td>
+                <td>jhon@wick.com</td>
+                <td>USA</td>
+                <td><span class="span">Inactive</span></td>
+              </tr>
+              <tr>
+                <td>Jane Doe</td>
+                <td>Google</td>
+                <td>+987 654 321</td>
+                <td>jane@doe.com</td>
+                <td>Canada</td>
+                <td> <span>Active</span></td>
+              </tr>
+              <tr>
+                <td>Jhon Wick</td>
+                <td>Microsoft</td>
+                <td>+123 456 789</td>
+                <td>jhon@wick.com</td>
+                <td>USA</td>
+                <td><span>Acive </span></td>
+              </tr>
+              <tr>
+                <td>Jane Doe</td>
+                <td>Google</td>
+                <td>+987 654 321</td>
+                <td>jane@doe.com</td>
+                <td>Canada</td>
+                <td> <span>Active</span></td>
+              </tr>
+              <tr>
+                <td>Jhon Wick</td>
+                <td>Microsoft</td>
+                <td>+123 456 789</td>
+                <td>jhon@wick.com</td>
+                <td>USA</td>
+                <td><span>Acive </span></td>
+              </tr>
+              <tr>
+                <td>Jane Doe</td>
+                <td>Google</td>
+                <td>+987 654 321</td>
+                <td>jane@doe.com</td>
+                <td>Canada</td>
+                <td> <span class="span">Inactive</span></td>
               </tr>
             </tbody>
           </table>

@@ -34,7 +34,6 @@ body {
   display: flex;
   width: 100%;
   max-width: 1400px;
-  height: 100vh;
 }
 .sidebar {
   width: 250px;
@@ -71,6 +70,7 @@ body {
 
   nav {
     margin-top: 60px;
+
     .list {
       .item {
         border-radius: 8px;
@@ -78,10 +78,12 @@ body {
         height: 46px;
         align-items: center;
         display: flex;
+        margin-bottom: 18px;
 
         &:hover {
           background-color: #5932ea;
         }
+
         &-link {
           font-family: "Poppins", sans-serif;
           font-weight: 500;
@@ -90,7 +92,6 @@ body {
           display: flex;
           align-items: center;
           padding: 11px 8px 11px 11px;
-
           width: 100%;
 
           &__logo {
@@ -105,12 +106,37 @@ body {
             height: 16px;
             stroke: #9197b3;
             margin-left: auto;
-            &:hover {
-              stroke: #ffffff;
-            }
+          }
+          &:hover {
+            background-color: #ffffff;
           }
         }
       }
+    }
+  }
+  .dev {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 76px;
+    align-items: center;
+
+    &__foto {
+      border-radius: 50%;
+      width: 40px;
+      margin-right: 12px;
+    }
+
+    &-name__title {
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      color: #000;
+    }
+    &-name__prof {
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.01em;
+      color: #757575;
     }
   }
 }
@@ -202,26 +228,33 @@ th {
   color: #b5b7c0;
   padding-bottom: 14px;
 }
-
+th.status {
+  width: 80px;
+}
 td {
   font-weight: 500;
   font-size: 14px;
   color: #292d32;
+  padding: 20px 0;
 }
-td.status {
-  border-radius: 5px;
+
+td span {
+  border: 1px solid #00b087;
+  border-radius: 4px;
+  padding: 4px 12px;
+  background: rgba(22, 192, 152, 0.38);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #008767;
   text-align: center;
-  background-color: #5cb85c;
 }
 
-td.status.Active {
-  background-color: #5cb85c;
+.span {
+  color: #df0404;
+  background: #ffc5c5;
+  border: 1px solid #df0404;
 }
-
-td.status.Inactive {
-  background-color: #d9534f;
-}
-
 .pagination {
   display: flex;
   justify-content: space-between;
