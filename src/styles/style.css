@@ -82,6 +82,12 @@ body {
 .sidebar nav .list .item:hover {
   background-color: #5932ea;
 }
+.sidebar nav .list .item:hover .item-link {
+  color: white;
+}
+.sidebar nav .list .item:hover .item-link__logo2 {
+  stroke: white;
+}
 .sidebar nav .list .item-link {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -248,10 +254,33 @@ td span {
   color: #b5b7c0;
 }
 
-.paginations-controls a {
-  margin: 0 5px;
-  color: #407bff;
-  text-decoration: none;
+.paginations-controls {
+  display: flex;
+  gap: 12px;
+  width: 271px;
+  height: 24px;
+}
+.paginations-controls .span {
+  background: #f5f5f5;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  text-align: center;
+  width: 25px;
+  height: 24px;
+  cursor: pointer;
+}
+.paginations-controls .span:hover {
+  background-color: #5932ea;
+}
+.paginations-controls .span:hover a {
+  color: #ffffff;
+}
+.paginations-controls .span a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: #404b52;
+  text-align: center;
 }
 
 /* Адаптивные стили */
@@ -263,8 +292,17 @@ td span {
     width: 100%;
     padding: 10px;
   }
+  .sidebar .dev {
+    margin-top: 30px;
+  }
   .main-content {
     padding: 10px;
+  }
+  .customer-table__block {
+    flex-wrap: wrap;
+  }
+  .customer-table__search-bar {
+    margin-top: 30px;
   }
   table,
   th,
@@ -284,7 +322,8 @@ td span {
   td.status {
     margin-top: 5px;
   }
-  .pagination {
-    flex-direction: column;
+  .paginations {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
